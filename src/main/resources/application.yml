@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-mvc-demo
+  flyway:
+    locations: classpath:db/migration
+    validate-on-migrate: true
+    baseline-on-migrate: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+  freemarker:
+    suffix: .ftl
+    settings:
+      locale: 'ru_RU'
+      output_encoding: 'UTF-8'
+      datetime_format: 'dd.MM.yyyy HH:mm'
+      date_format: 'dd.MM.yyyy'

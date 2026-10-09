@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:8080
+
+### list users
+GET {{baseUrl}}/api/users
+Accept: application/json
+
+### create user
+POST {{baseUrl}}/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Dmitriy",
+  "email": "dima@gmail.com"
+}
+
+### uupdate user
+PUT {{baseUrl}}/api/users/4
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Max",
+  "email": "maxim@yandex.ru"
+}
+
+### delete user
+DELETE {{baseUrl}}/api/users/5
